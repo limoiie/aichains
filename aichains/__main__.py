@@ -7,7 +7,7 @@ import traitlets.config
 from IPython.terminal.prompts import Prompts, Token
 from dotenv import load_dotenv
 
-from aichains import arxiv
+from aichains import arxiv, chat
 
 
 class MyPrompts(Prompts):
@@ -35,5 +35,6 @@ if __name__ == "__main__":
 
     fire.Fire({
         'repl': repl,
-        'arxiv': arxiv
+        'arxiv': arxiv,
+        'chat': chat
     })

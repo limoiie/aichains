@@ -60,4 +60,4 @@ python -m aichain -- --help
 python -m aichain chat -- --help
 python -m aichain arxiv -- --help
 python -m aichain repl -- --help
-`
+```

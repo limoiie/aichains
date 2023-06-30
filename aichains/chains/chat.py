@@ -31,6 +31,9 @@ chain: Optional[LLMChain] = None
 
 @render_output
 def chat(question: str, temperature=0.2, history_len=2, streaming=True, verbose=None):
+    """
+    Chat with ChatGPT.
+    """
     global chain
     if chain is None:
         chain = LLMChain(
